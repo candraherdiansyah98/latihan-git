@@ -1,0 +1,22 @@
+push project ke github
+1. buat folder kosong / folder yang sudah ada file project
+2. masuk ke dalam directory (folder) project kalian
+3. klik kanan -> git bash here
+misalkan -> htdocs/namaprojek
+4. konfigurasi git
+
+#belum punya repository
+git init -> fungsinya untuk membuat inisialisasi repo git di project
+git config user.name "namasendiri" -> konfigurasi nama
+git config user.email "emailsendiri" -> konfigurasi email
+git remote add origin https://personal-token@github.com/username/namarepo.git -> menambahkan sumber repo yang sudah dibuat di github
+git add . -> menambahkan semua perubahan yang sudah di lakukan
+git commit -m "pesan" -> memberikan keterangan perubahan apa saja yang sudah dilakukan/dikerjakan
+git push origin master -> mengirimkan semua perubahan beserta keterangan ke server github
+
+#sudah punya repository
+git add .
+git commit -m "pesan"
+git push origin master
+
+nb: master -> adalah branch(cabang utama/default) dari repo yang sudah dibuat
